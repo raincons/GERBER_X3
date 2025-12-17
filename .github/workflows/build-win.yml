@@ -43,6 +43,8 @@ jobs:
         id: install-boost
         with:
           boost_version: ${{ env.BOOST_VERSION }}
+          platform_version: 2022
+          toolset: msvc
           cache: "true"
       - name: Add Boost to env
         run: |
