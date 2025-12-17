@@ -15,6 +15,7 @@ project(file_plugins)
 file(GLOB HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/*.h)
 file(GLOB SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 file(GLOB UIS ${CMAKE_CURRENT_SOURCE_DIR}/*.ui)
+include_directories(${Boost_INCLUDE_DIR})
 
 set(PROJECT_SOURCES ${HEADERS} ${SOURCES} ${UIS})
 
